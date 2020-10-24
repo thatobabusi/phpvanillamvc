@@ -29,6 +29,7 @@ class PageController
     {
         $title = "Home";
         $items = $this->db->getAll('items', Item::class);
+
         $data = compact("title", "items");
 
         return view("pages/index.php", $data);
@@ -38,6 +39,7 @@ class PageController
     {
         $title = "Test Get";
         $items = $this->db->getAll('items', Item::class);
+
         $data = compact("title", "items");
 
         return view("pages/test-get.php", $data);
@@ -48,6 +50,7 @@ class PageController
         $title = "Test Post";
         $new_item = $this->db->insertData('items', $_POST);
         $items = $this->db->getAll('items', Item::class);
+
         $data = compact("title", "items");
 
         return view("pages/test-post.php", compact("title", "items"));
