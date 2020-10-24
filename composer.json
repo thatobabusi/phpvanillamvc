@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "classmap": [
+      "./"
+    ]
+  },
+  "require": {
+    "ext-http": "*",
+    "ext-pdo": "*",
+    "ext-curl": "*"
+  }
+}
